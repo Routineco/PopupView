@@ -125,7 +125,7 @@ public struct Popup<PopupContent>: ViewModifier where PopupContent: View {
             if position == .bottom {
                 return screenHeight - presenterContentRect.midY - sheetContentRect.height/2
             } else {
-                return -presenterContentRect.midY + sheetContentRect.height/2
+                return -presenterContentRect.midY + sheetContentRect.height/2 + 50
             }
         case .floater(let verticalPadding):
             if position == .bottom {
@@ -142,7 +142,7 @@ public struct Popup<PopupContent>: ViewModifier where PopupContent: View {
             if presenterContentRect.isEmpty {
                 return -1000
             }
-            return -presenterContentRect.midY - sheetContentRect.height/2 - 5
+            return -presenterContentRect.midY - sheetContentRect.height/2 - 55
         } else {
             if presenterContentRect.isEmpty {
                 return 1000
