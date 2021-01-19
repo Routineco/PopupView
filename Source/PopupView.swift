@@ -142,7 +142,7 @@ public struct Popup<PopupContent>: ViewModifier where PopupContent: View {
             if presenterContentRect.isEmpty {
                 return -1000
             }
-            return -presenterContentRect.midY - sheetContentRect.height/2 - 55
+            return -presenterContentRect.midY - sheetContentRect.height/2 - 155
         } else {
             if presenterContentRect.isEmpty {
                 return 1000
